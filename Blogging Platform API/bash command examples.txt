@@ -8,4 +8,11 @@ curl GET http://127.0.0.1:5000/posts
 
 curl GET http://127.0.0.1:5000/posts/1
 
+curl-X DELETE http://127.0.0.1:5000/posts/2
 
+curl -X PUT http://127.0.0.1:5000/posts/1 "Content-Type: application/json" -d '{"title" : "Second", "content" :
+"beautiful flowers across the London anathema", "tag": "punk"}'
+
+
+
+curl GET http://127.0.0.1:5000/postsearch?term=london
