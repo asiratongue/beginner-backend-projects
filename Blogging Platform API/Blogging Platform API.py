@@ -37,7 +37,7 @@ with app.app_context():
 
 
 #main route for CRUD operations
-@app.route('/posts/<int:idx>', methods = {"POST", "GET", "PUT", "DELETE"})
+@app.route('/posts/<int:id>', methods = {"POST", "GET", "PUT", "DELETE"})
 def posts_int_endpoint(id):
 
     # MUST send request with article in json format, correct keys.
