@@ -1,4 +1,4 @@
-These are all my solutions to the roadmap.sh backend projects, labelled as beginner.
+These are all my solutions to some of the roadmap.sh backend projects, labelled as beginner.
 
 
 https://roadmap.sh/projects/blogging-platform-api
