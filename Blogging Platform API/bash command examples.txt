@@ -1,0 +1,11 @@
+curl -X POST http://127.0.0.1:5000/posts/1 -H "Content-Type: application/json" -d '{"title" : "First", "content" :
+"london callin", "tag": "punk"}'
+
+curl -X POST http://127.0.0.1:5000/posts/2 -H "Content-Type: application/json" -d '{"title" : "Second", "content" :
+"asscheeks callin", "tag": "punkd"}'
+
+curl GET http://127.0.0.1:5000/posts
+
+curl GET http://127.0.0.1:5000/posts/1
+
+

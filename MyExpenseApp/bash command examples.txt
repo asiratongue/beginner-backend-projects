@@ -1,0 +1,25 @@
+curl -X POST http://127.0.0.1:8000/ExpenseAPI/register/ -H "Content-Type: application/json" -d '{"username" : "Saitama", "email" : "saitama@gmail.com", "password" : "itsover9000"}'
+
+curl -X POST http://127.0.0.1:8000/ExpenseAPI/login/ -H "Content-Type: application/json" -d '{"username" : "Buddhaman", "password" : "agni232"}'  
+
+curl -X POST http://127.0.0.1:8000/ExpenseAPI/login/ -H "Content-Type: application/json" -d '{"username" : "Brother2021",  "password" : "freemybruddas"}'
+
+
+curl -X POST http://127.0.0.1:8000/ExpenseAPI/expense/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwNzI0NjM3LCJpYXQiOjE3MzA3MTM4MzcsImp0aSI6Ijk0NmRlZGI1ZWIzODRjNWRhNmZjMGE2M2FhZjNjYjIzIiwidXNlcl9pZCI6MX0.6LUPpRv-MI0ycQkXcR1pkW5I-Xvfl4U9o8ZNpocvOtU" \
+-d '{"name": "Tama!rind", "expense": "17.93 mo*&£(nthly"}'
+
+
+
+curl -X PUT http://127.0.0.1:8000/ExpenseAPI/expense/5 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwMjI5MjM2LCJpYXQiOjE3MzAyMTg0MzYsImp0aSI6IjM3NThmZmI5NTE0NzRlM2Y4OWU1NTkwMDM0OThlMzllIiwidXNlcl9pZCI6MX0.gyWEltM5lOFtwZ0U_645ecQsGXGajTSTdJ3jciRLjfM" \-H "Content-Type: application/json" \-d '{"name" : "sunfucker oil", "expense" : "69 monthly"}'
+
+
+
+curl -X DELETE http://127.0.0.1:8000/ExpenseAPI/expense/5 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwMjI5NTAwLCJpYXQiOjE3MzAyMTg3MDAsImp0aSI6IjY5ZmZkYjg3NTFjZTRhNGVhNThkM2RlMGI4OWVjYWMzIiwidXNlcl9pZCI6Mn0.VyFevmq1Pq1k4W0pR7TG2zsX--3bvw57AyqIj-9ct1A" 
+
+
+curl -X GET http://127.0.0.1:8000/ExpenseAPI/expense/search/?from=9-30 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMwMzY4MzIzLCJpYXQiOjE3MzAzNTc1MjMsImp0aSI6ImYyOWQ5ZDdjNTcyNzRiODdiZTE1NTVhMTYwYmNmZGM0IiwidXNlcl9pZCI6MX0.R71QJAwOTmYDag5DfvI2eLaNdM1ZZHRpr--2w7R-_Kc"
+
+
+ 

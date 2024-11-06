@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+
+    </head>
+    <meta charset="UTF-8">
+    </body>
+    <h1 style="text-align: center;">Dashboard</h1>
+
+    <form action="/dashboard", methods = "POST"></form>
+    <ul style = "list-style-type: none; padding: 0%;">
+
+        {% for article_title in article_title_list %}
+
+            <li><a href={{ url_for('article_page', id=loop.index )}}>{{article_nested_dict[loop.index].title}}</a></li>
+            <li>{{article_nested_dict[loop.index].Date}}</li>
+            <li><a href={{ url_for('edit_page', id=loop.index )}}>edit</a></li>
+            <li><a href={{ url_for('delete_page', id=loop.index )}}>delete</a> </li>
+            <br>
+
+        {% endfor %}
+    </ul>
+
+    <a href={{ url_for('add_page')}}>click here to add a new article</a><br><br><br><br>
+    <br>
+    <a href={{ url_for('home')}}>back</a>

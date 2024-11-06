@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+
+    </head>
+    <meta charset="UTF-8">
+    </body>
+    <h1>My first article!</h1>
+
+    <form action="/article", method = "POST">
+        {% for article_title in article_title_list %}
+            <h1>{{ article_title_list}}</h1>
+            <h2>{{ article_date_list}}</h2>
+            <p>{{article_content_list}}</p>
+        {% endfor %}
+
+    </form>

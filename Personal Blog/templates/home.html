@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+
+    </head>
+    <meta charset="UTF-8">
+    </body>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">blog</h1>
+
+    <style>
+        .space {
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <form action="/article", method = "POST">
+
+        <ul style = "list-style-type: none; padding: 0%; display: block; margin-right: auto; margin-left: auto; ">
+            {% for article_title in article_title_list %}
+
+                <li><a href={{ url_for('article_page', id=loop.index )}}>{{article_nested_dict[loop.index].title}}</a></li>
+                <div class = "space"></div>
+                <li>{{article_nested_dict[loop.index].Date}}</li>
+                <p> ***********************************</p>
+
+            {% endfor %}
+        </ul>
+
+    </form>
+
+    <p><a style="text-align: center;" href={{ url_for('dashboard')}}>click here to access the dashboard (admin only)</a></p>
+
+</html>
+
+ 

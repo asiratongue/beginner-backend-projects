@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+
+    </head>
+    <meta charset="UTF-8">
+    </body>
+    <h1 style = "text-align: center;">!!!!!!!</h1>
+
+    <form action={{ url_for('article_page', id=id )}}, method = "POST">
+        <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">{{article_nested_dict[id].title}}</h2>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">{{article_nested_dict[id].Date}}</h1>
+        <p><pre style="text-align: center;">{{article_nested_dict[id].Content}}</pre></p>
+        <a href={{ url_for('home')}} style = "display: block; text-align: center;">back</a>
+    </form>

@@ -1,0 +1,54 @@
+curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username" : "Buddha", "email" : "firstbuddha@gmail.com", "password" : "agni232"}'
+
+curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"email" : "Firstguy@gmail.com", "password" : "agni232"}'
+
+curl -X POST http://127.0.0.1:5000/todos \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZpcnN0Z3V5IiwiaWF0IjoxNzI3OTQ3MDE3fQ.yOJ9DQugJBCuSvn87s4SAhvi4QuABN3uWMX_LKM4tgE" \-H "Content-Type: application/json" \-d '{"title" : "any situation can either be", "description" : "changed, accepted, or left alone."}'
+
+curl -X PUT http://127.0.0.1:5000/todos/3 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZpcnN0Z3V5IiwiaWF0IjoxNzI3OTQ3MDE3fQ.yOJ9DQugJBCuSvn87s4SAhvi4QuABN3uWMX_LKM4tgE" \-H "Content-Type: application/json" \-d '{"title" : "do not never feel sorry for oneself ever", "description" : "feeling sorry for oneself is the most deceptive form of entitlement, you get what you want by deserving it (working smart, focus, discipline, TRIAL AND ERROR"}'
+
+curl -X DELETE http://127.0.0.1:5000/todos/4 \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZpcnN0Z3V5IiwiaWF0IjoxNzI3OTQ3MDE3fQ.yOJ9DQugJBCuSvn87s4SAhvi4QuABN3uWMX_LKM4tgE"
+
+curl -X GET "http://127.0.0.1:5000/todos?page=1&limit=5" \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZpcnN0Z3V5IiwiZXhwIjoxNzMwODg2OTkyfQ.GaPuTMpEVEctytORbOhHT4LOh3U0ak23oLFBQ5eno7s"
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username" : "nigga2012", "email" : "Fisfaffy@gmail.com", "password" : "panties"}'
+
+curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"email" : "Fisfaffy@gmail.com", "password" : "panties"}'
+
+curl -X POST http://127.0.0.1:5000/todos \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pZ2dhMjAxMiIsImlhdCI6MTcyODEyNDU4Nn0.ZI0r-HMmZropwfBpYfcn5u-UahNLh26FPeoCneNzEdg" \-H "Content-Type: application/json" \-d '{"title" : "selfless climbing only", "description" : "Mountains should be climbed with as little effort as possible and without desire. The reality of your own nature should determine the speed. "}'
+
+curl -X POST http://127.0.0.1:5000/todos \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pZ2dhMjAxMiIsImlhdCI6MTcyODEyNDU4Nn0.ZI0r-HMmZropwfBpYfcn5u-UahNLh26FPeoCneNzEdg" \-H "Content-Type: application/json" \-d '{"title" : "Mohnish Pabrai", "description" : "If you get an incongruence between who you are internally and who you are [in terms of action] externally, you will not go far in life."}'
+
+curl -X POST http://127.0.0.1:5000/todos \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pZ2dhMjAxMiIsImlhdCI6MTcyODEyNDU4Nn0.ZI0r-HMmZropwfBpYfcn5u-UahNLh26FPeoCneNzEdg" \-H "Content-Type: application/json" \-d '{"title" : "Warren Buffet", "description" : "Would you rather be the worlds greatest lover, but have everyone think youre the worlds worst lover? Or would you rather be the worlds worst lover but have everyone think youre the worlds greatest lccover?"}'
+
+
+curl -X PUT http://127.0.0.1:5000/todos/4 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pZ2dhMjAxMiIsImV4cCI6MTczMDExMDM4M30.rthDxgYCS2-7UnLPN48UO5JcGKoyIWBtIXUjzpavWQY" \-H "Content-Type: application/json" \-d '{"title" : "selfless climbing only nigga", "description" : "Mountains should be climbed with as little effort as possible and without desire. The reality of your own nature should determine the speed."}'
+
+curl -X DELETE http://127.0.0.1:5000/todos/4 \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkZpcnN0Z3V5IiwiaWF0IjoxNzI3OTQ3MDE3fQ.yOJ9DQugJBCuSvn87s4SAhvi4QuABN3uWMX_LKM4tgE"
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pZ2dhMjAxMiIsImlhdCI6MTcyODEyNDU4Nn0.ZI0r-HMmZropwfBpYfcn5u-UahNLh26FPeoCneNzEdg
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:5000/register -H "Content-Type: application/json" -d '{"username" : "whybenormal", "email" : "Thirdguy@gmail.com", "password" : "gnosis232"}'
+
+curl -X POST http://127.0.0.1:5000/login -H "Content-Type: application/json" -d '{"email" : "Thirdguy@gmail.com", "password" : "gnosis232"}'
+
+curl -X POST http://127.0.0.1:5000/todos \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoeWJlbm9ybWFsIiwiZXhwIjoxNzI4MzAyNDI3fQ.iVDBVpM23_OC5sQHZN1SbLi1uie02l4zZiatDaU7HEE" \-H "Content-Type: application/json" \-d '{"title" : "focus on the aaaaaaaright thing", "description" : "not about the houaaars you work, but whether you work on the right thing"}'
+
+curl -X DELETE http://127.0.0.1:5000/todos/11 \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoeWJlbm9ybWFsIiwiaWF0IjoxNzI4Mjg3NDYxfQ.n82hDxPJDueIKiHwa-DtHttB5R84S_87g991zziXbhg"
+
+
+curl -X PUT http://127.0.0.1:5000/todos/9 \-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoeWJlbm9ybWFsIiwiaWF0IjoxNzI4Mjg3NDYxfQ.n82hDxPJDueIKiHwa-DtHttB5R84S_87g991zziXbhg" \-H "Content-Type: application/json" \-d '{"title" : "NNT", "description" : "Be a Fat Tony, not a Dr John, jugg, dont tell, become him, dont waste any energy convincing people around you that youre him."}'
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoeWJlbm9ybWFsIiwiZXhwIjoxNzI4Mjk5NTA4fQ.PTPwEzPjtiwokCBOmqxifLT7ecY2iy07e3RPDkfqp0A

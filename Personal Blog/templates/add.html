@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <h1 style="text-align: center;">New Article</h1>
+    </head>
+    <body>
+
+    <style>
+        .spacer {
+            margin-bottom: 40px; /* Adjust spacing as needed */
+        }
+    </style>
+
+        <form action="{{ url_for('add_page')}}" method="POST">
+
+            <textarea style="display: block; width: 1000px; margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif;" class="" id="ArticleTitle" name="Article_Title" placeholder="Article Title" required></textarea>
+
+            <div class = "spacer"></div>
+
+            <textarea style="display: block; width: 1000px; margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif;" id="PublishingDate" name="Publishing_Date" placeholder="Publishing Date" required></textarea>
+
+            <div class = "spacer"></div>
+
+            <textarea style="display: block; width: 1000px; height: 670px; margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif;"id="ContentBox" name="Content" placeholder="Content" required></textarea>
+    
+            <input style="display: block; margin-right: auto; margin-left: auto; font-family: Arial, Helvetica, sans-serif;" type="submit" value="Publish"> 
+
+            <a href={{ url_for('dashboard')}} style = "display: block; text-align: center; font-family: Arial, Helvetica, sans-serif;">back</a>
+
+        </form>
+
+        
+    </body>
+</html>
