@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <meta charset="UTF-8">
+<body> 
+    <h1> Unit Converter </h1>
+
+
+    
+    <form action="/convertlength", method='POST'>
+        <a href= {{ url_for('weight_home')}} id="weight-link" class="button">Convert Weight</a>
+        <a href= {{ url_for('temperature_home')}} id="temperature-link" class="button">Convert Temperature</a>
+        <a href={{ url_for('home')}} id="length-link" class="button">Convert Length</a> 
+        <br>
+        <br>
+        <label for="value">enter the Length to convert</label>
+        <textarea id="value" name="Length" required></textarea>
+        <br>
+        <br>
+        <label for="dropdown">select the unit to convert from</label>
+        <select id="dropdown" name="convert_from">
+
+            <option value="millimeter">millimeter</option>
+            <option value="centimeter">centimeter</option>
+            <option value="meter">meter</option>
+            <option value="kilometer">kilometer</option>
+            <option value="inch">inch</option>
+            <option value="foot">foot</option>
+            <option value="yard">yard</option>
+            <option value="mile">mile</option>
+
+        </select>
+        <br>
+        <br>
+        <label for="dropdown">select the unit to convert to </label>
+        <select id="dropdown" name="convert_to">
+
+            <option value="millimeter">millimeter</option>
+            <option value="centimeter">centimeter</option>
+            <option value="meter">meter</option>
+            <option value="kilometer">kilometer</option>
+            <option value="inch">inch</option>
+            <option value="foot">foot</option>
+            <option value="yard">yard</option>
+            <option value="mile">mile</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Convert">    
+    </form>
+    <h2>Your Conversion below</h2>
+        <h3>{{result_statement}}</h3>
+
+</body> 
+</html>
