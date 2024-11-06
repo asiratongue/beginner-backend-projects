@@ -1,0 +1,8 @@
+curl GET http://127.0.0.1:5000/London
+
+curl GET http://127.0.0.1:5000/Bronx
+
+curl GET http://127.0.0.1:5000/Madrid
+
+curl GET http://127.0.0.1:5000/Newham
+
